@@ -1,0 +1,49 @@
+:root {
+    --grid-cols: 16;
+    --grid-rows: 16;
+    --pen-color: #393e46;
+}
+
+body {
+    color: #222831;
+    background-size: cover;
+    background-color: peachpuff;
+};
+
+#pageWrap {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+h1 {
+    margin: 1rem 0rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#header {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+.pixel {
+    background-color: white;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.draw {
+    background-color: var(--pen-color);
+}
